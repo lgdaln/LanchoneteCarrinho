@@ -4,14 +4,16 @@ using LanchoneteCore.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LanchoneteCore.Migrations
 {
     [DbContext(typeof(LanchoneteCoreContext))]
-    partial class LanchoneteCoreContextModelSnapshot : ModelSnapshot
+    [Migration("20191202141630_ImagemProduto")]
+    partial class ImagemProduto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -21,6 +21,7 @@ namespace LanchoneteCore.Models
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public int ValorUnitario { get; set; }
         public List<PedidoDetalhe> ListaPedidoDetalhe { get; set; }
+        public string ImagemUrl { get; set; }
 
         public Produto()
         {

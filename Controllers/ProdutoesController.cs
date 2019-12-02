@@ -25,11 +25,13 @@ namespace LanchoneteCore.Controllers
         {
             return View(await _context.Produto.ToListAsync());
         }
-
-        public async Task<IActionResult> Index2()
+        /*
+         *         public async Task<IActionResult> Index2()
         {
             return View(await _context.Produto.ToListAsync());
         }
+         */
+
 
         // GET: Produtoes/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -92,7 +94,7 @@ namespace LanchoneteCore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProdutoID,Nome,Disponibilidade,ValorUnitario")] Produto produto)
+        public async Task<IActionResult> Edit(int id, [Bind("ProdutoID,Nome,Disponibilidade,ValorUnitario,ImagemUrl")] Produto produto)
         {
             if (id != produto.ProdutoID)
             {
