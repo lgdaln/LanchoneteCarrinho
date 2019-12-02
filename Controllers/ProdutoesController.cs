@@ -62,7 +62,7 @@ namespace LanchoneteCore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProdutoID,Nome,Disponibilidade,ValorUnitario")] Produto produto)
+        public async Task<IActionResult> Create([Bind("ProdutoID,Nome,Disponibilidade,ValorUnitario,ImagemUrl")] Produto produto)
         {
             if (ModelState.IsValid)
             {
