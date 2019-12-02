@@ -25,13 +25,6 @@ namespace LanchoneteCore.Controllers
         {
             return View(await _context.Produto.ToListAsync());
         }
-        /*
-         *         public async Task<IActionResult> Index2()
-        {
-            return View(await _context.Produto.ToListAsync());
-        }
-         */
-
 
         // GET: Produtoes/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -1,9 +1,0 @@
-﻿@model LanchoneteCore.Models.ViewModels.PedidoFormViewModel
-
-<
-
-@foreach (Produto produto in Model.Produtos)
-{
-    @Html.PartialAsync("SanduicheResumo", produto)
-}
-
