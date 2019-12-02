@@ -1,0 +1,42 @@
+﻿@model LanchoneteCore.Models.PedidoDetalhe
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PedidoDetalhe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Preco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Produto.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pedido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pedido.PedidoID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PedidoDetalheID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

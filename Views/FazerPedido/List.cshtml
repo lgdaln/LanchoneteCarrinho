@@ -1,0 +1,8 @@
+﻿@model IEnumerable<LanchoneteCore.Models.Produto>
+
+<div>Todos os lanches</div>
+
+@foreach (var produto in Model)
+{
+    @Html.Partial("_FazerPedido", produto)
+}
