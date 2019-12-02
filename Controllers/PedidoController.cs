@@ -54,8 +54,9 @@ namespace LanchoneteCore.Controllers
             public IActionResult CheckoutCompleto()
             {
                 ViewBag.CheckoutCompletoMensagem = "Obrigado pelo seu pedido :) ";
-                return View();
-            }
+                //return View();
+                  return RedirectToAction("Create", "Clientes");
+        }
 
         // GET: Pedidoes
 
