@@ -19,7 +19,7 @@ namespace LanchoneteCore.Models
         [Required(ErrorMessage = "Informe o valor do produto.")]
         [Display(Name = "Valor")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
-        public int ValorUnitario { get; set; }
+        public decimal ValorUnitario { get; set; }
         public List<PedidoDetalhe> ListaPedidoDetalhe { get; set; }
         public string ImagemUrl { get; set; }
 
